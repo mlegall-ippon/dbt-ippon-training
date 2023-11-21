@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: restaurants__turnover_ordered
+    columns: 
+      - name: restau_id
+        description: '{{ doc("restau_id")}}'      
+      - name: name
+        description: '{{ doc("name")}}'
+        tests:
+          - unique
+      - name: address
+        description: '{{ doc("address")}}'
+      - name: nb_employees
+        description: '{{ doc("nb_employees")}}'
+      - name: turnover
+        description: '{{ doc("turnover")}}'
+        tests:
+          - positive_column
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('expected_restaurants_turnover_ordered')
+          compare_columns:
+            - restau_id
+            - name
+            - address
+            - nb_employees
+            - turnover  
+          tags: ['ci']

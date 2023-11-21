@@ -1,8 +1,8 @@
-identifier,name,address,nb_employees
-1,Chez rolivet,Place de la Bourse - Toulouse,3
-2,Chez vheng,Avenue de la Grande Armee - Paris,4
-3,Chez tjumeaux,Avenue de la Grande Armee - Paris,2
-4,Chez nachereiner,Allees de Tourny - Bordeaux,1
-5,Chez vtreve,Allee Susan Brownell Anthony - Nantes,3
-6,Chez ehajajou,Place de la Bourse - Toulouse,1
-7,Chez siribarne,Allees de Tourny - Bordeaux,10
+identifier,name,address,nb_employees,open_on_sundays
+1,Chez rolivet,Place de la Bourse - Toulouse,3,open
+2,Chez vheng,Avenue de la Grande Armee - Paris,4,open
+3,Chez tjumeaux,Avenue de la Grande Armee - Paris,2,open
+4,Chez nachereiner,Allees de Tourny - Bordeaux,1,close
+5,Chez vtreve,Allee Susan Brownell Anthony - Nantes,3,close
+6,Chez ehajajou,Place de la Bourse - Toulouse,1,open
+7,Chez siribarne,Allees de Tourny - Bordeaux,10,open

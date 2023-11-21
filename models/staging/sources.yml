@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: SOURCE
+    description: Schema where are data sources
+    tables: 
+      - name: restaurants
+        description: table with data about the restaurants
+      - name: orders
+        description: table with data about the orders
+        columns:
+          - name: identifier
+            tests:
+              - not_null
+              - unique:
+                  severity: warn
+      - name: fuzzy_orders
+      - name: dishes
+                
+  
