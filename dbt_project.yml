@@ -40,6 +40,7 @@ models:
       +schema: silver
     marts:
       +schema: gold
+      +materialized: table
 
 
 seeds:
