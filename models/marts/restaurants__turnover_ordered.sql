@@ -17,4 +17,5 @@ with restaurants_turnover as (
         turnover desc
 )
 
+
 select * from restaurants_turnover_ordered limit {{var('nb_restaurants_to_show')}}
