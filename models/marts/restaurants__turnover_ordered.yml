@@ -17,3 +17,13 @@ models:
         description: '{{ doc("turnover")}}'
         tests:
           - positive_column
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('expected_restaurants_turnover_ordered')
+          compare_columns:
+            - restau_id
+            - name
+            - address
+            - nb_employees
+            - turnover  
+          tags: ['ci']
